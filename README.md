@@ -1,3 +1,3 @@
 ## my personal site on github pages
 
-see [http://nibeon.github.com](https://github.com/nibeon/nibeon.github.com.git)
+see [http://nibeon.github.com](http://nibeon.github.com)
