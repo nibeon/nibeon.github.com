@@ -6,31 +6,97 @@
     
     <!-- pure css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
-    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- my styles -->
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <div class="pure-menu pure-menu-horizontal">
         <a href="#" class="pure-menu-heading pure-menu-link">NIBEON</a>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#aboutme" class="pure-menu-link">About</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Skills</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Projects</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Services</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contacts</a></li>
+            <li class="pure-menu-item"><a href="#aboutme" class="pure-menu-link"><i class="fas fa-user"></i> About me</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fas fa-code"></i> Programming</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fas fa-gamepad"></i> Gamedev</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fas fa-music"></i> Music creating</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fas fa-info"></i> Various hobbies</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><i class="fas fa-pen-nib"></i> Blog</a></li>
+        </ul>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">en</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">ru</a></li>
         </ul>
     </div>
     
     <div id="wrapper">
         <!-- about -->
         <div id="header" class="section">
-            This is my mini site on Guthub Pages. 
-            <h3>Now in development</h3>
+            <div class="block-info" id="aboutme">
+                <h3>About me</h3>
+
+                Hello! My name is Vasya. I'm living in Odessa, Ukraine. <br>
+                I'm interesting in web-development, indie gamedev, music creating and some more. <br>
+                This is not a portfolio site, but the information provided here may be of interest to potential employers and clients. <br>
+                
+            </div>
+
+            <div class="block-info" id="web">
+                <h3>Programming</h3>
+                
+                <h4>Web-development</h4>
+                <h4>Mobile development</h4>
+                <h4>Desktop</h4>
+                
+            </div>
+
+            <div class="block-info" id="gamedev">
+                <h3>Gamedev</h3>
+            </div>
+
+            <div class="block-info" id="music">
+                <h3>Music creating and composing</h3>
+            </div>
+
+            <div class="block-info" id="hobbies">
+                <h3>Hobbies</h3>
+
+                <h4>Astronomy</h4>
+
+                <h4>Photography</h4>
+
+                <h4>Graphics</h4>
+                <p>- 2d</p>
+                <p>- 3d</p>
+
+                <h4>Linux</h4>
+            </div>
         </div>
     </div>
-    
+
+    <div class="footer">
+        <dic class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="" class="pure-menu-link"> <i class="fab fa-github-square"></i> github</a>
+                </li>                
+                <li class="pure-menu-item">
+                    <a href="" class="pure-menu-link"> <i class="fab fa-linkedin"></i> linkedin</a>
+                </li>   
+                <li class="pure-menu-item">
+                    <a href="" class="pure-menu-link"> <i class="fab fa-facebook-square"></i> facebook</a>
+                </li>   
+                <li class="pure-menu-item">
+                    <a href="mailto:nibeon@gmail.com?subject=Site%20http://nibeon.github.io" target="_blank" class="pure-menu-link"> <i class="fas fa-envelope-square"></i></a>
+                </li>   
+                <li class="pure-menu-item">
+                    <a href="" class="pure-menu-link"></a>
+                </li>   
+            </ul>
+        </dic>
+    </div>
+
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
