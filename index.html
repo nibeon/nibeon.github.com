@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nibeon: portfolio</title>
-
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- materialize -->
-    <link rel="stylesheet" href="css/materialize.min.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+   
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
@@ -19,302 +21,359 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- main menu -->
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Nibeon: web-developer</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#main">Main</a></li>
-                    <li><a href="#works">My works</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </div>
-        </nav>        
-    </div>    
-
-        
-        <!-- main -->
-        <div id="main" class="blocks red lighten-4">
-            
-            <h1 class="center">Portfolio</h1>
-            
-            <div class="row">
-                <div class="col s12">
-                    <ul class="tabs">
-                        <li class="tab col s6"><a href="#tab1">En</a></li>
-                        <li class="tab col s6"><a href="#tab2">Ru</a></li>
+    <div id="top"></div>
+    <header>
+        <div class="container">
+            <div class="columns">
+                <div class="column col-sm-12 col-md-4">
+                    <h5>Nibeon</h4>
+                </div>
+                <div class="column col-sm-12 col-md-4">web-developer's portfolio</div>
+                <div class="column col-sm-12 col-md-4">
+                    <ul id="nav">
+                        <li>
+                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#works">Works</a>
+                            <a href="#contacts">Contacts</a>
+                        </li>
                     </ul>
                 </div>
-                <div id="tab1" class="col s12">                    
-                    <div class="row">
-                        <div class="col s12">
-                            This portfolio site was created to showcase my work and skills. You can contact me either by sending an e-mail, or through the contacts listed at the bottom of the page.
+            </div>
+        </div>
+    </header>
+    
+    <!-- about section -->
+    <div id="about" class="block">
+        <div class="container">
+            <div class="column col-12">
+                <h1>About me</h1>            
+            </div>
+            <div class="column col-12">
+                <p>My name is Vasya.</p> 
+                <p>I am engaged in layout and programming of site pages, landings. I make up and connect input forms, sliders and other scripts, include connection or written by me personally.</p>
+                <p>I am landing your template (or one made by me) on Wordpress (website, landing page, store).</p>
+                <p>Also I am interested in non-mainstream programming languages such as Common Lisp, FreeBasic, FreePascal, D, Lua and some others.</p>
+                <p>I am also interested in creating and developing games that I post to itch.io -> <a href="https://nibeon.itch.io" target="_blank">https://nibeon.itch.io</a> </p>
+            </div>
+        </div>
+    </div>
+    <!-- end about section -->
+    
+    
+    <!-- skills section -->
+    <div id="skills" class="block">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-md-3 col-sm-12">
+                    <h3>HTML/CSS</h3>
+                    <div class="circle">
+                        80%
+                    </div>                    
+                </div>
+                <div class="column col-md-3 col-sm-12">
+                    <h3>JS/jQuery</h3>
+                    <div class="circle">
+                        70%
+                    </div>
+                </div>
+                <div class="column col-md-3 col-sm-12">
+                    <h3>Wordpress</h3>
+                    <div class="circle">
+                        70%
+                    </div>
+                </div>
+                <div class="column col-md-3 col-sm-12">
+                    <h3>PS/Figma</h3>
+                    <div class="circle">
+                        50%
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- end skills section -->
+    
+    
+    <!-- works section -->
+    <div id="works" class="block">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1>Works</h1>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/1.jpg" alt="">
+                        <div class="hover">
+                            <p>Page about renovations</p>
+                            <p>
+                                <button class="btn" id="for-modal-1">Details</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/2.jpg" alt="">
+                        <div class="hover">
+                            <p>Business</p>
+                            <p>
+                                <button class="btn" id="for-modal-2">Details</button>
+                            </p>
                         </div>
                     </div>                    
                 </div>
-                <div id="tab2" class="col s12">
-                    <div class="row">
-                        <div class="col s12">
-                            Данный сайт-портфолио предназначен для демонстрации моих работ и умений. Связаться со мной можно либо отправив е-мэйл, либо через контакты, указанные внизу страницы.
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/3.jpg" alt="">
+                        <div class="hover">
+                            <p>Landing</p>
+                            <p>
+                                <button class="btn" id="for-modal-3">Details</button>
+                            </p>
                         </div>
                     </div>
-                    
                 </div>
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/4.jpg" alt="">
+                        <div class="hover">
+                            <p>Flat-site</p>
+                            <p>
+                                <button class="btn" id="for-modal-4">Details</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/5.jpg" alt="">
+                        <div class="hover">
+                            <p>Coral landing</p>
+                            <p>
+                                <button class="btn" id="for-modal-5">Details</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column col-md-3 col-sm-12">
+                    <div class="img">
+                        <img src="img/preview/6.jpg" alt="">
+                        <div class="hover">
+                            <p>Wordpress site</p>
+                            <p>
+                                <button class="btn" id="for-modal-6">Details</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
-            <div class="center">
-                <a class="waves-effect waves-light btn-large" href="mailto:nibeon@gmail.com?subject=web-development">Send mail</a>
-            </div>
-            
         </div>
-        
-        
-        
-        <!-- my works -->
-        <div id="works" class="blocks">
-        
-            <h1 class="center">My works</h1>
-            
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/1.jpg">
-                            <span class="card-title">Page about repairs</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Example page | Верстка тематика ремонтов</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://nibeon.github.io/portfolio-verstka/1/index.html" target="_blank">Repairs</a>
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/2.jpg">
-                            <span class="card-title">Business page</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Example business page | Верстки бизнес-странички</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://nibeon.github.io/portfolio-verstka/2/index.html" target="_blank">Business</a>
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/3.jpg">
-                            <span class="card-title">landing</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Example landing page | Верстка лендинга</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://nibeon.github.io/portfolio-verstka/3/index.html" target="_blank">Landing</a>
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/4.jpg">
-                            <span class="card-title">Pinwall</span>
-                        </div>
-                        <div class="card-content">
-                          <p>Example page in flat-style | Верстки в стиле flat</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://nibeon.github.io/portfolio-verstka/4/index.html" target="_blank">Pinwall</a>
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/5.jpg">
-                            <span class="card-title">Simple Coral</span>
-                        </div>
-                        <div class="card-content">
-                          <p>My html-template | Мой html-шаблон</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="https://nibeon.github.io/portfolio-verstka/5/index.html" target="_blank">Simple Coral</a>
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col s12 m6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/0.jpg">
-                            <span class="card-title">Card Title</span>
-                        </div>
-                        <div class="card-content">
-                          <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="#">This is a link</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
-                        
-        </div> 
-  
-       
-        <!-- skills -->
-        <div id="skills" class="blocks red lighten-4">
-            
-            <h1 class="center">Skills</h1>
-            
-            <div class="row">
-                <div class="col s12 m6">
-                    
-                    <ul>
-                        <li>HTML5/CSS3</li>
-                        <li>CSS frameworks (MaterializeCSS, PureCSS, SpectreCSS, Bootstrap)</li>
-                        <li>Less</li>
-                        <li>JavaScript (mainly jQuery, basics Vue.js and React)</li>
-                        <li>Wordpress</li>
-                        <li>Python (basics)</li>
-                        <li>PHP (basics)</li>
-                        <li>GIT</li>
-                        <li>Photoshop (basics)</li>
-                    </ul>
-                    
-                </div>
-                <div class="col s12 m6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi exercitationem, optio suscipit unde itaque vel, alias sint minus facere pariatur quibusdam earum nesciunt eius animi quia magni iusto cum.
-                </div>
-            </div>
-            
+    </div>
+    <!-- end works section -->
+    
+    <!-- contacts section -->
+    
+    
+    <div class="hero bg-gray block" id="contacts">     
+        <div class="hero-body">
+            <div class="container">
+                <h1>Write me</h1>
+                <p><a class="btn btn-primary btn-lg" id="send-mail" href="mailto:nibeon@gmail.com&subject=About&site">Send mail</a></p>
+            </div>   
         </div>
-        
-        
-        <!-- about me -->
-        <div id="about" class="blocks">
-           
-            <h1 class="center">About me</h1>
-            
-            <div class="row">
-                <div class="col s12">
-                    <ul class="tabs">
-                        <li class="tab col s6"><a href="#test1">En</a></li>
-                        <li class="tab col s6"><a href="#test2">Ru</a></li>
-                    </ul>
-                </div>
-                <div id="test1" class="col s12">
-                    
-                    <div class="row">
-                        <div class="col s4">
-                            
-                           <div class="center middle">
-                               <img src="img/photo.jpg" alt="me">
-                           </div>
-                            
-                        </div>
-                        <div class="col s6">
-                            <p>My name is Vasya.</p>
-                            <p>I am engaged in layout and programming of site pages, landings. I make up and connect input forms, sliders and other scripts, include connection or written by me personally.</p>
-                            <p>I am landing your template (or one made by me) on Wordpress (website, landing page, store).</p>
-                            <p>I am interested in non-mainstream programming languages such as Common Lisp, FreeBasic, FreePascal, D, Lua and some others.</p>
-                            <p>I am also interested in creating and developing games that I post to itch.io -> <a href="https://nibeon.itch.io" target="_blank">https://nibeon.itch.io</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div id="test2" class="col s12">
-                    
-                    <div class="row">
-                        <div class="col s4">
-                          
-                           <div class="center middle">
-                               <img src="img/photo.jpg" alt="me">
-                           </div>
-                            
-                        </div>
-                        <div class="col s6">
-                            <p>Меня зовут Василий.</p>
-                            <p>Я занимаюсь версткой и программированием страниц сайта, лендингов. Верстаю и подключаю формы обратной связи, слайдеры и другие скрипты, взятые как плагины или написанные лично мной.</p>
-                            <p>Делаю посадку вашего шаблона (или мной сверстанного) на Wordpress(сайт, лендинг, машазин).</p>
-                            <p>Интересуюсь немейнстримовыми языками программирования, такими как Common Lisp, FreeBasic, FreePascal, D, Lua и некоторыми другими.</p>
-                            <p>Также интересуюсь созданием и разработкой игр, которые обычно выкладываю на itch.io -> <a href="https://nibeon.itch.io" target="_blank">https://nibeon.itch.io</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>    
-        
-        
-        
-        <!-- contacts -->
+    </div>
 
-
+    <!-- end contacts section -->
     
     <!-- footer -->
-    <footer class="page-footer" id="contacts">
+    <footer>       
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Contacts</h5>
-                    <p class="grey-text text-lighten-4">
-                        <div>
-                            <ul>
-                                <li><a class="grey-text text-lighten-3" href="viber://chat?number=%2B380501075171"><i class="fa fa-phone-square" aria-hidden="true"></i>
- Viber</a></li>
-                                <li><a class="grey-text text-lighten-3" title="Telegram" href="tg://resolve?domain=nibeon"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Telegram</a></li>
-                            </ul>
-                        </div>
-                    </p>
+            <div class="columns">
+                <div class="column col-sm-12 col-md-4">
+                    &copy; nibeon, 2022
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Social networks</h5>
+                <div class="column col-sm-12 col-md-4">
+                   
                     <ul>
-                      <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/poteryaiko-vasya-08aa3148/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/nibeon/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/nibeon/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://nibeon.itch.io" target="_blank">itch.io</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://github.com/nibeon/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i> Github</a></li>
-                    </ul>
+                        <li>
+                           <a title="Telegram" href="tg://resolve?domain=nibeon" target="_blank"><i class="fa fa-telegram icons" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                           <a href="https://www.linkedin.com/in/poteryaiko-vasya-08aa3148/" target="_blank"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                           <a href="https://www.facebook.com/nibeon/" target="_blank"><i class="fa fa-facebook-square icons" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                           <a href="https://github.com/nibeon/" target="_blank"><i class="fa fa-github-square icons" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>      
                 </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2022 nibeon
-                <a class="grey-text text-lighten-4 right" href="https://materializecss.com" target="_blank">Create with materialize.css</a>
+                <div class="column col-sm-12 col-md-4">
+                    Create with <a href="https://picturepan2.github.io" target="_blank">SPECTRE.CSS</a>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- end footer -->    
+    
+    
+    
+    
+    <!-- modals section -->
+    <div class="modals">
+       
+        <div class="modal modal-lg" id="modal-1">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-1" aria-label="Close"></a>
+              <div class="modal-title h5">Work 1</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/1.jpg" alt=""></p>
+                <p>
+                    <a href="https://nibeon.github.io/portfolio-verstka/1/index.html" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-1">Close</button>
+            </div>
+          </div>
+        </div>
+                
+        <div class="modal modal-lg" id="modal-2">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-2" aria-label="Close"></a>
+              <div class="modal-title h5">Work 2</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/2.jpg" alt=""></p>
+                <p>
+                    <a href="https://nibeon.github.io/portfolio-verstka/2/index.html" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-2">Close</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal modal-lg" id="modal-3">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-3" aria-label="Close"></a>
+              <div class="modal-title h5">Work 3</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/3.jpg" alt=""></p>
+                <p>
+                    <a href="https://nibeon.github.io/portfolio-verstka/3/index.html" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-3">Close</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal modal-lg" id="modal-4">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-4" aria-label="Close"></a>
+              <div class="modal-title h5">Work 4</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/4.jpg" alt=""></p>
+                <p>
+                    <a href="https://nibeon.github.io/portfolio-verstka/4/index.html" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-4">Close</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal modal-lg" id="modal-5">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-5" aria-label="Close"></a>
+              <div class="modal-title h5">Work 5</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/5.jpg" alt=""></p>
+                <p>
+                    <a href="https://nibeon.github.io/portfolio-verstka/5/index.html" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-5">Close</button>
+            </div>
+          </div>
+        </div>
+       
+        <div class="modal modal-lg" id="modal-6">
+          <a href="#close" class="modal-overlay" aria-label="Close"></a>
+          <div class="modal-container">
+            <div class="modal-header">
+              <a href="#close" class="btn btn-clear float-right close-modal-6" aria-label="Close"></a>
+              <div class="modal-title h5">Work 5</div>
+            </div>
+            <div class="modal-body">
+              <div class="content">
+                <p><img src="img/6.jpg" alt=""></p>
+                <p>
+                    <a href="#" target="_blank">Go to page</a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn close-modal-6">Close</button>
+            </div>
+          </div>
+        </div>
+       
+       
+       <div id="to-top">
+           <a class="btn btn-primary to-top" href="#top"><i class="icon icon-upward"></i></a>
+       </div>
+        
+    </div>
+    <!-- end modals section -->    
+
     
     <!-- scripts -->
     <!-- jQuery-->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- materialize -->
-    <script src="js/materialize.min.js"></script>
     <!-- my script -->
     <script src="js/app.js"></script>
-    
-    <script>
-       /* $(document).ready(function(){
-            $('.tabs').tabs();
-        }); */
-    </script>
    
 </body>
 </html>
