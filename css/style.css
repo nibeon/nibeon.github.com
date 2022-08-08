@@ -11,17 +11,13 @@ a.my-links {
   color: #098013;
   text-decoration: underline;
 }
-a a:hover,
-a.my-links a:hover,
-a a.my-links:hover,
-a.my-links a.my-links:hover {
+a:hover,
+a.my-links:hover {
   color: #2F8036;
   text-decoration: none;
 }
-a a:visited,
-a.my-links a:visited,
-a a.my-links:visited,
-a.my-links a.my-links:visited {
+a:visited,
+a.my-links:visited {
   color: #2F8036;
 }
 h1 {
@@ -34,7 +30,7 @@ h1 {
   border-color: #098013;
   color: #098013;
 }
-.btn .btn:hover {
+.btn:hover {
   border-color: #098013;
   color: #2F8036;
 }
@@ -43,7 +39,7 @@ h1 {
   background-color: #5EFF6C;
   color: #098013;
 }
-.btn.btn-primary .btn.btn-primary:hover {
+.btn.btn-primary:hover {
   border-color: #098013;
   background-color: #2F8036;
 }
