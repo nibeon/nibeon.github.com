@@ -1,8 +1,15 @@
-// first-color: #CD5C5C (indianred)
-// second-color: #F2F050
-// third-color: #F23838
-// fourth-color: #1FA1F2
-// five-color: #1E71A6
+// first: #5EFF6C (светло-зеленый, салатовый)
+// second-color: #12FF27 (ярко-зеленый)
+// third-color: #098013 (темно-зеленый)
+// fourth-color: #2F8036 (блекло-зеленый)
+// five-color: #0ECC1E (средне-зеленый)
+
+@main-bg: #5EFF6C;
+@second-bg: #12FF27;
+@links-bg: #0ECC1E;
+@links-color: #098013;
+@links-hover-bg: #2F8036;
+
 
 
 body, * {
@@ -13,14 +20,19 @@ body, * {
     max-width: 1024px;
 }
 
-a {
-    color: #1E71A6;
-    a:hover {
-        color: #1FA1F2;
+a, a.my-links {
+    color: @links-color;
+    text-decoration: underline;
+    a:hover, a.my-links:hover {
+        color: @links-hover-bg;
+        text-decoration: none;
+    }
+    a:visited, a.my-links:visited {
+        color: @links-hover-bg;
     }
 }
 h1 {
-    border-bottom: 1px solid #CD5C5C;
+    border-bottom: 1px solid @second-bg;
 }
 
 .block {
@@ -28,29 +40,35 @@ h1 {
 }
 
 .btn {
-    border-color: #1E71A6;
-    color: #1E71A6;
+    border-color: @links-color;
+    color: @links-color;
     .btn:hover {
-        border-color: #1FA1F2;
-        color: #1FA1F2;
+        border-color: @links-color;
+        color: @links-hover-bg;
     }
 }
 .btn.btn-primary {
-    border-color: #1E71A6;
-    background-color: #1E71A6;
+    border-color: @links-color;
+    background-color: @main-bg;
+    color: @links-color;
     .btn.btn-primary:hover {
-        border-color: #1FA1F2;
-        background-color: #1FA1F2;
+        border-color: @links-color;
+        background-color: @links-hover-bg;
     }
+}
+.btn.btn-primary:focus, .btn.btn-primary:hover {
+    background: @links-hover-bg;
+    border-color: @links-color;
+    color: #fff;
 }
 
 header {
     
-    background-color: #F2F050;
+    background-color: @main-bg;
     padding: 10px 0;
     text-align: center;
-    color: #202020;
-    border-bottom: 1px solid #CD5C5C;
+    color: black;
+    border-bottom: 1px solid @second-bg;
     
     h5 {        
         text-transform: uppercase;
@@ -68,11 +86,11 @@ header {
             a {
                 margin: 0;
                 padding: 5px;
-                color: #1E71A6;
+                color: @links-color;
                 font-weight: bold;
             }
             a:hover {
-                background-color: #1E71A6;
+                background-color: @links-hover-bg;
                 color: white;
                 text-decoration: none;
             }
@@ -82,7 +100,7 @@ header {
 
 #about {
     min-height: 50vh;
-    background-color: #F2F050;
+    background-color: lighten(@main-bg, 10%);
 }
 
 .circle {
@@ -90,8 +108,8 @@ header {
     width: 100px;
     height: 100px;
     font-size: 25pt;
-    background-color: #CD5C5C;
-    color: white;
+    background-color: @main-bg;
+    color: @links-hover-bg;
     text-align: center;
     line-height: 90px;
 }
@@ -111,7 +129,7 @@ header {
         height: 209px;
         top: 0;
         left: 0;
-        background-color: #CD5C5C;
+        background-color: @main-bg;
         text-align: center;
         line-height: 100px;
         z-index: 2;
@@ -124,7 +142,7 @@ header {
 }
 
 footer {
-    background-color: #F2F050;
+    background-color: @main-bg;
     padding: 20px 0;
     ul {
         list-style-type: none;        
@@ -138,11 +156,11 @@ footer {
             a {
                 margin: 0;
                 padding: 5px;
-                color: #1E71A6;
+                color: @links-color;
                 font-weight: bold;
             }
             a:hover {
-                border: 1px solid #1E71A6;
+                border: 1px solid @links-color;
                 text-decoration: none;
             }
         }
@@ -150,7 +168,7 @@ footer {
 }
 
 i.icons {
-    color: #1E71A6;
+    color: @links-color;
 }
 
 #to-top {
