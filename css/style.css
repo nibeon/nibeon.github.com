@@ -8,53 +8,36 @@ body,
 }
 a,
 a.my-links {
-  color: #098013;
-  text-decoration: underline;
-}
-a:hover,
-a.my-links:hover {
-  color: #2F8036;
   text-decoration: none;
+  color: #68C399;
+  font-weight: bold;
 }
+a :hover,
+a.my-links :hover {
+  text-decoration: none;
+  border: 1px solid #68C399;
+}
+a:active,
 a:visited,
-a.my-links:visited {
-  color: #2F8036;
+a:focus {
+  color: #AFD98D;
+}
+a.my-btn {
+  color: #68C399;
+  background: #AFD98D;
 }
 h1 {
-  border-bottom: 1px solid #12FF27;
+  border-bottom: 1px solid #68C399;
 }
 .block {
   padding: 50px 0;
 }
-.btn {
-  border-color: #098013;
-  color: #098013;
-}
-.btn:hover {
-  border-color: #098013;
-  color: #2F8036;
-}
-.btn.btn-primary {
-  border-color: #098013;
-  background-color: #5EFF6C;
-  color: #098013;
-}
-.btn.btn-primary:hover {
-  border-color: #098013;
-  background-color: #2F8036;
-}
-.btn.btn-primary:focus,
-.btn.btn-primary:hover {
-  background: #2F8036;
-  border-color: #098013;
-  color: #fff;
-}
 header {
-  background-color: #5EFF6C;
+  background-color: #68C399;
   padding: 10px 0;
   text-align: center;
-  color: black;
-  border-bottom: 1px solid #12FF27;
+  border-bottom: 1px solid #AFD98D;
+  color: white;
 }
 header h5 {
   text-transform: uppercase;
@@ -72,25 +55,25 @@ header ul li {
 header ul li a {
   margin: 0;
   padding: 5px;
-  color: #098013;
+  color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 header ul li a:hover {
-  background-color: #2F8036;
-  color: white;
   text-decoration: none;
+  color: #FAF587;
 }
 #about {
   min-height: 50vh;
-  background-color: #91ff9b;
+  background-color: #FAF587;
 }
 .circle {
   border-radius: 100px;
   width: 100px;
   height: 100px;
   font-size: 25pt;
-  background-color: #5EFF6C;
-  color: #2F8036;
+  background-color: #68C399;
+  color: white;
   text-align: center;
   line-height: 90px;
 }
@@ -108,7 +91,7 @@ header ul li a:hover {
   height: 209px;
   top: 0;
   left: 0;
-  background-color: #5EFF6C;
+  background-color: #AFD98D;
   text-align: center;
   line-height: 100px;
   z-index: 2;
@@ -118,8 +101,8 @@ header ul li a:hover {
   height: auto;
 }
 footer {
-  background-color: #5EFF6C;
   padding: 20px 0;
+  background-color: #AFD98D;
 }
 footer ul {
   list-style-type: none;
@@ -134,15 +117,32 @@ footer ul li {
 footer ul li a {
   margin: 0;
   padding: 5px;
-  color: #098013;
+  color: #68C399;
   font-weight: bold;
 }
+footer ul li a i.icons {
+  color: #68C399;
+}
 footer ul li a:hover {
-  border: 1px solid #098013;
+  color: #68C399;
   text-decoration: none;
 }
-i.icons {
-  color: #098013;
+footer ul li a:hover i {
+  color: #68C399;
+}
+.btn.my-btn {
+  color: white;
+  background-color: #68C399;
+  border: 0;
+}
+.modal .btn.my-btn {
+  font-weight: bold;
+}
+.btn.my-btn-2 {
+  color: #68C399;
+  background-color: white;
+  font-weight: bold;
+  border: 0;
 }
 #to-top {
   position: fixed;

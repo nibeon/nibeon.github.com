@@ -1,75 +1,44 @@
-// first: #5EFF6C (светло-зеленый, салатовый)
-// second-color: #12FF27 (ярко-зеленый)
-// third-color: #098013 (темно-зеленый)
-// fourth-color: #2F8036 (блекло-зеленый)
-// five-color: #0ECC1E (средне-зеленый)
+// #68C399 - зеленый тип
+// #AFD98D - желто-зеленый тип
+// #FAF587 - желтый тип
 
-@main-bg: #5EFF6C;
-@second-bg: #12FF27;
-@links-bg: #0ECC1E;
-@links-color: #098013;
-@links-hover-bg: #2F8036;
+@main: #68C399; // #04A763;
+@second: #AFD98D; 
+@third: #FAF587; 
 
+body, * { font-family: 'Montserrat', sans-serif; }
 
-body, * {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    max-width: 1024px;
-}
+.container { max-width: 1024px; }
 
 a, a.my-links {
-    color: @links-color;
-    text-decoration: underline;
-    a:hover, a.my-links:hover {
-        color: @links-hover-bg;
+    text-decoration: none;
+    color: @main;
+    font-weight: bold;
+    :hover {
         text-decoration: none;
-    }
-    a:visited, a.my-links:visited {
-        color: @links-hover-bg;
+        border: 1px solid @main;
     }
 }
-h1 {
-    border-bottom: 1px solid @second-bg;
+a:active, a:visited, a:focus { 
+        color: @second;
+}
+a.my-btn {
+    color: @main;
+    background: @second;
 }
 
-.block {
-    padding: 50px 0;
-}
+h1 { border-bottom: 1px solid @main; }
 
-.btn {
-    border-color: @links-color;
-    color: @links-color;
-    .btn:hover {
-        border-color: @links-color;
-        color: @links-hover-bg;
-    }
-}
-.btn.btn-primary {
-    border-color: @links-color;
-    background-color: @main-bg;
-    color: @links-color;
-    .btn.btn-primary:hover {
-        border-color: @links-color;
-        background-color: @links-hover-bg;
-    }
-}
-.btn.btn-primary:focus, .btn.btn-primary:hover {
-    background: @links-hover-bg;
-    border-color: @links-color;
-    color: #fff;
-}
+.block { padding: 50px 0; }
 
 header {
-    
-    background-color: @main-bg;
+    background-color: @main;
     padding: 10px 0;
     text-align: center;
-    color: black;
-    border-bottom: 1px solid @second-bg;
-    
-    h5 {        
+    border-bottom: 1px solid @second;
+    color: white;
+
+    h5 {
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -78,6 +47,7 @@ header {
         list-style-type: none;
         margin: 0;
         padding: 0;
+
         li {
             margin: 0;
             padding: 0;
@@ -85,13 +55,14 @@ header {
             a {
                 margin: 0;
                 padding: 5px;
-                color: @links-color;
-                font-weight: bold;
-            }
-            a:hover {
-                background-color: @links-hover-bg;
                 color: white;
+                font-weight: bold;
                 text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: none;
+                color: @third;
             }
         }
     }
@@ -99,7 +70,7 @@ header {
 
 #about {
     min-height: 50vh;
-    background-color: lighten(@main-bg, 10%);
+    background-color: @third;
 }
 
 .circle {
@@ -107,8 +78,8 @@ header {
     width: 100px;
     height: 100px;
     font-size: 25pt;
-    background-color: @main-bg;
-    color: @links-hover-bg;
+    background-color: @main;
+    color: white;
     text-align: center;
     line-height: 90px;
 }
@@ -116,11 +87,10 @@ header {
 .img {
     width: 300px;
     height: 209px;
-    //border: 1px solid #CD5C5C;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-    
+
     .hover {
         display: none;
         position: absolute;
@@ -128,7 +98,7 @@ header {
         height: 209px;
         top: 0;
         left: 0;
-        background-color: @main-bg;
+        background-color: @second;
         text-align: center;
         line-height: 100px;
         z-index: 2;
@@ -141,12 +111,13 @@ header {
 }
 
 footer {
-    background-color: @main-bg;
     padding: 20px 0;
+    background-color: @second;
     ul {
-        list-style-type: none;        
+        list-style-type: none;
         margin: 0;
         padding: 0;
+
         li {
             display: inline;
             margin: 0;
@@ -155,19 +126,38 @@ footer {
             a {
                 margin: 0;
                 padding: 5px;
-                color: @links-color;
+                color: @main;
                 font-weight: bold;
+                
+                i.icons { 
+                    color: @main; 
+                }
             }
+
             a:hover {
-                border: 1px solid @links-color;
+                i {
+                    color: @main;
+                }
+                color: @main;
                 text-decoration: none;
             }
         }
     }
 }
 
-i.icons {
-    color: @links-color;
+.btn.my-btn{
+    color: white;
+    background-color: @main;
+    border: 0;
+}
+.modal .btn.my-btn {
+    font-weight: bold;
+}
+.btn.my-btn-2{
+    color: @main;
+    background-color: white;
+    font-weight: bold;
+    border: 0;
 }
 
 #to-top {
@@ -178,9 +168,3 @@ i.icons {
     width: 20px;
     height: 20px;
 }
-
-/*
-.modals {
-    display: none;
-}
-*/
