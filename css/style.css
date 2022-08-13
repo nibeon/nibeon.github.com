@@ -18,8 +18,11 @@ a.my-links :hover {
   border: 1px solid #68C399;
 }
 a:active,
+a.my-links:active,
 a:visited,
-a:focus {
+a.my-links:visited,
+a:focus,
+a.my-links:focus {
   color: #AFD98D;
 }
 a.my-btn {
